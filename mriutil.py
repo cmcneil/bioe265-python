@@ -14,6 +14,6 @@ mysinc = np.vectorize(mysincd)
 def myjincd(x):
     eps = 10**-12
     if np.abs(x) < eps:
-        return 0.785
+        return np.pi / 4
     return sp.jn(1, np.pi*x) / (2 * x)
 myjinc = np.vectorize(myjincd)
